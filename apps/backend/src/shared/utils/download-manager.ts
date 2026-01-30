@@ -5,7 +5,7 @@ import { createLogger } from '../logger'
 const log = createLogger('download-manager')
 
 export type DownloadContext = {
-  runId: string
+  runId: number
   basePath: string
 }
 
@@ -30,7 +30,7 @@ export function createDownloadBatch(
   now: Date = new Date()
 ): DownloadBatch {
   const folderName = formatHourFolder(now)
-  const folder = path.join(ctx.basePath, ctx.runId, folderName)
+  const folder = path.join(ctx.basePath, String(ctx.runId), folderName)
 
   if (!fs.existsSync(folder)) {
     fs.mkdirSync(folder, { recursive: true })

@@ -4,3 +4,6 @@
 {"level":"info","module":"bootstrap","message":"✅ MySQL conectado com sucesso","timestamp":"2026-01-30T13:38:45.222Z"}
 {"level":"info","module":"bootstrap","message":"Ambiente: development","timestamp":"2026-01-30T13:38:45.223Z"}
 {"level":"info","module":"bootstrap","message":"Porta: 3000","timestamp":"2026-01-30T13:38:45.223Z"}
+{"level":"info","module":"bootstrap","message":"✅ MySQL conectado com sucesso","timestamp":"2026-01-30T16:06:05.236Z"}
+{"level":"info","module":"bootstrap","message":"Ambiente: development","timestamp":"2026-01-30T16:06:05.237Z"}
+{"level":"info","module":"bootstrap","message":"Porta: 3000","timestamp":"2026-01-30T16:06:05.238Z"}
