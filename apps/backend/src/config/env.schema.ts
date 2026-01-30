@@ -26,7 +26,17 @@ export const envSchema = z.object({
 
   DOWNLOAD_BASE_PATH: z.string().min(1).default("./downloads"),
 
-  LOG_LEVEL: z.enum(["fatal", "error", "warn", "info", "debug", "trace"]).default("info"),
+  LOG_LEVEL: z
+    .enum(["fatal", "error", "warn", "info", "debug", "trace"])
+    .default("info"),
+
+  // =========================
+  // Gmail (TOTP EMAIL)
+  // =========================
+  GOOGLE_CLIENT_ID: z.string().min(1),
+  GOOGLE_CLIENT_SECRET: z.string().min(1),
+  GOOGLE_REDIRECT_URI: z.string().min(1),
+  GOOGLE_REFRESH_TOKEN: z.string().min(1),
 });
 
 export type Env = z.infer<typeof envSchema>;
