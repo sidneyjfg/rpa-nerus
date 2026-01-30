@@ -1,0 +1,3 @@
+{"level":"info","module":"bootstrap","message":"✅ MySQL conectado com sucesso","timestamp":"2026-01-30T11:18:41.200Z"}
+{"level":"info","module":"bootstrap","message":"Ambiente: development","timestamp":"2026-01-30T11:18:41.201Z"}
+{"level":"info","module":"bootstrap","message":"Porta: 3000","timestamp":"2026-01-30T11:18:41.202Z"}

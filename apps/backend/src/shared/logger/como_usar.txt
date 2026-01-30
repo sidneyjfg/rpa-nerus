@@ -1,0 +1,9 @@
+import { createLogger } from "../../shared/logger";
+
+const log = createLogger("seed:client");
+
+log.info("Iniciando seed");
+log.info("Cliente criado", { name: "LINDT" });
+log.warn("Cliente já existia");
+log.error("Falha ao criar", err);
+log.debug("Payload", payload);
