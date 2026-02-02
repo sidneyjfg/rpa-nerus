@@ -25,17 +25,18 @@ export async function step(page: Page, ctx: AutomationContext): Promise<void> {
                 ?.parentElement?.click()
         })
 
-        await delay(4000)
         const pages = await page.browser().pages()
         page = pages[pages.length - 1]
-
-        await page.click('a[test-id="my income"]')
         await delay(4000)
 
-        await page.type(
-            'input[type="password"][placeholder="Senha"]',
-            ctx.platformConfig.password
-        )
+        await page.waitForSelector('a[test-id="my income"]', { timeout: 20000 })
+        await page.click('a[test-id="my income"]')
+
+        // espera QUALQUER campo de senha visível
+        await page.waitForSelector('input[type="password"]', { timeout: 20000 })
+
+        log.info("Digitando senha...")
+        await page.type('input[type="password"]', ctx.platformConfig.password, { delay: 80 })
 
         await page.evaluate(() => {
             [...document.querySelectorAll('button span')]

@@ -1,9 +1,165 @@
-{"level":"info","module":"bootstrap","message":"✅ MySQL conectado com sucesso","timestamp":"2026-01-30T11:18:41.200Z"}
-{"level":"info","module":"bootstrap","message":"Ambiente: development","timestamp":"2026-01-30T11:18:41.201Z"}
-{"level":"info","module":"bootstrap","message":"Porta: 3000","timestamp":"2026-01-30T11:18:41.202Z"}
-{"level":"info","module":"bootstrap","message":"✅ MySQL conectado com sucesso","timestamp":"2026-01-30T13:38:45.222Z"}
-{"level":"info","module":"bootstrap","message":"Ambiente: development","timestamp":"2026-01-30T13:38:45.223Z"}
-{"level":"info","module":"bootstrap","message":"Porta: 3000","timestamp":"2026-01-30T13:38:45.223Z"}
-{"level":"info","module":"bootstrap","message":"✅ MySQL conectado com sucesso","timestamp":"2026-01-30T16:06:05.236Z"}
-{"level":"info","module":"bootstrap","message":"Ambiente: development","timestamp":"2026-01-30T16:06:05.237Z"}
-{"level":"info","module":"bootstrap","message":"Porta: 3000","timestamp":"2026-01-30T16:06:05.238Z"}
+{"level":"info","module":"scheduler","message":"Scheduler iniciado","timestamp":"2026-01-30T20:08:53.107Z"}
+{"level":"info","module":"bootstrap","message":"✅ MySQL conectado com sucesso","timestamp":"2026-01-30T20:08:53.108Z"}
+{"level":"info","module":"bootstrap","message":"Ambiente: development","timestamp":"2026-01-30T20:08:53.109Z"}
+{"level":"info","module":"bootstrap","message":"Porta: 3000","timestamp":"2026-01-30T20:08:53.109Z"}
+{"level":"info","module":"scheduler","message":"Disparando automação 1 | [object Object]","timestamp":"2026-01-30T20:12:53.156Z"}
+{"level":"info","module":"shopee-login-step","message":"RunStep START","timestamp":"2026-01-30T20:12:53.605Z"}
+{"level":"info","module":"click-by-text","message":"Botão clicado: \"Sign in\"","timestamp":"2026-01-30T20:13:09.790Z"}
+{"level":"info","module":"scheduler","message":"Scheduler iniciado","timestamp":"2026-02-02T10:10:07.538Z"}
+{"level":"info","module":"bootstrap","message":"✅ MySQL conectado com sucesso","timestamp":"2026-02-02T10:10:07.556Z"}
+{"level":"info","module":"bootstrap","message":"Ambiente: development","timestamp":"2026-02-02T10:10:07.557Z"}
+{"level":"info","module":"bootstrap","message":"Porta: 3000","timestamp":"2026-02-02T10:10:07.557Z"}
+{"level":"info","module":"scheduler","message":"Disparando automação 1 | [object Object]","timestamp":"2026-02-02T10:11:07.646Z"}
+{"level":"info","module":"shopee-login-step","message":"RunStep START","timestamp":"2026-02-02T10:11:11.204Z"}
+{"level":"info","module":"click-by-text","message":"Botão clicado: \"Faça login\"","timestamp":"2026-02-02T10:11:19.922Z"}
+{"level":"info","module":"totp-email","message":"Solicitando envio de OTP por e-mail","timestamp":"2026-02-02T10:11:22.935Z"}
+{"level":"info","module":"gmail-reader","message":"Buscando e-mails via Gmail API...","timestamp":"2026-02-02T10:11:25.962Z"}
+{"level":"info","module":"gmail-reader","message":"Nenhum e-mail encontrado para query: is:unread from:\"Shopee via Suporte - O2\"","timestamp":"2026-02-02T10:11:27.092Z"}
+{"level":"info","module":"totp-email","message":"Tentativa OTP 1: não chegou","timestamp":"2026-02-02T10:11:27.093Z"}
+{"level":"info","module":"gmail-reader","message":"Buscando e-mails via Gmail API...","timestamp":"2026-02-02T10:11:32.098Z"}
+{"level":"info","module":"gmail-reader","message":"Nenhum e-mail encontrado para query: is:unread from:\"Shopee via Suporte - O2\"","timestamp":"2026-02-02T10:11:32.647Z"}
+{"level":"info","module":"totp-email","message":"Tentativa OTP 2: não chegou","timestamp":"2026-02-02T10:11:32.647Z"}
+{"level":"info","module":"gmail-reader","message":"Buscando e-mails via Gmail API...","timestamp":"2026-02-02T10:11:37.648Z"}
+{"level":"info","module":"gmail-reader","message":"Analisando email de: \"'Shopee' via Suporte - O2\" <suporteo2@nerus.com.br>","timestamp":"2026-02-02T10:11:38.409Z"}
+{"level":"info","module":"gmail-reader","message":"OTP encontrado: 379880","timestamp":"2026-02-02T10:11:38.409Z"}
+{"level":"info","module":"totp-email","message":"Tentativa OTP 3: 379880","timestamp":"2026-02-02T10:11:38.777Z"}
+{"level":"info","module":"totp-email","message":"OTP preenchido com sucesso","timestamp":"2026-02-02T10:11:39.436Z"}
+{"level":"info","module":"totp-service","message":"TOTP resolvido com sucesso","timestamp":"2026-02-02T10:11:39.436Z"}
+{"level":"info","module":"click-by-text","message":"Botão clicado: \"Verificar\"","timestamp":"2026-02-02T10:11:39.441Z"}
+{"level":"info","module":"shopee-login-step","message":"RunStep SUCCESS","timestamp":"2026-02-02T10:11:47.445Z"}
+{"level":"info","module":"shopee-navigate-step","message":"RunStep START","timestamp":"2026-02-02T10:11:47.461Z"}
+{"level":"info","module":"scheduler","message":"Disparando automação 1 | [object Object]","timestamp":"2026-02-02T10:12:07.586Z"}
+{"level":"info","module":"shopee-login-step","message":"RunStep START","timestamp":"2026-02-02T10:12:07.944Z"}
+{"level":"info","module":"click-by-text","message":"Botão clicado: \"Faça login\"","timestamp":"2026-02-02T10:12:14.677Z"}
+{"level":"info","module":"scheduler","message":"Scheduler iniciado","timestamp":"2026-02-02T10:46:39.989Z"}
+{"level":"info","module":"bootstrap","message":"✅ MySQL conectado com sucesso","timestamp":"2026-02-02T10:46:39.990Z"}
+{"level":"info","module":"bootstrap","message":"Ambiente: development","timestamp":"2026-02-02T10:46:39.990Z"}
+{"level":"info","module":"bootstrap","message":"Porta: 3000","timestamp":"2026-02-02T10:46:39.991Z"}
+{"level":"info","module":"scheduler","message":"Disparando automação 1 | [object Object]","timestamp":"2026-02-02T10:48:40.015Z"}
+{"level":"info","module":"shopee-login-step","message":"RunStep START","timestamp":"2026-02-02T10:48:40.534Z"}
+{"level":"info","module":"click-by-text","message":"Botão clicado: \"Faça login\"","timestamp":"2026-02-02T10:48:49.561Z"}
+{"level":"info","module":"totp-email","message":"Solicitando envio de OTP por e-mail","timestamp":"2026-02-02T10:48:52.576Z"}
+{"level":"info","module":"gmail-reader","message":"Buscando e-mails via Gmail API...","timestamp":"2026-02-02T10:48:55.600Z"}
+{"level":"info","module":"gmail-reader","message":"Nenhum e-mail encontrado para query: is:unread from:\"Shopee via Suporte - O2\"","timestamp":"2026-02-02T10:48:56.755Z"}
+{"level":"info","module":"totp-email","message":"Tentativa OTP 1: não chegou","timestamp":"2026-02-02T10:48:56.755Z"}
+{"level":"info","module":"gmail-reader","message":"Buscando e-mails via Gmail API...","timestamp":"2026-02-02T10:49:01.763Z"}
+{"level":"info","module":"gmail-reader","message":"Analisando email de: \"'Shopee' via Suporte - O2\" <suporteo2@nerus.com.br>","timestamp":"2026-02-02T10:49:02.501Z"}
+{"level":"info","module":"gmail-reader","message":"OTP encontrado: 662329","timestamp":"2026-02-02T10:49:02.502Z"}
+{"level":"info","module":"totp-email","message":"Tentativa OTP 2: 662329","timestamp":"2026-02-02T10:49:02.860Z"}
+{"level":"info","module":"totp-email","message":"OTP preenchido com sucesso","timestamp":"2026-02-02T10:49:03.554Z"}
+{"level":"info","module":"totp-service","message":"TOTP resolvido com sucesso","timestamp":"2026-02-02T10:49:03.555Z"}
+{"level":"info","module":"click-by-text","message":"Botão clicado: \"Verificar\"","timestamp":"2026-02-02T10:49:03.560Z"}
+{"level":"info","module":"shopee-login-step","message":"RunStep SUCCESS","timestamp":"2026-02-02T10:49:11.564Z"}
+{"level":"info","module":"shopee-navigate-step","message":"RunStep START","timestamp":"2026-02-02T10:49:11.578Z"}
+{"level":"info","module":"scheduler","message":"Scheduler iniciado","timestamp":"2026-02-02T10:52:05.976Z"}
+{"level":"info","module":"bootstrap","message":"✅ MySQL conectado com sucesso","timestamp":"2026-02-02T10:52:05.977Z"}
+{"level":"info","module":"bootstrap","message":"Ambiente: development","timestamp":"2026-02-02T10:52:05.978Z"}
+{"level":"info","module":"bootstrap","message":"Porta: 3000","timestamp":"2026-02-02T10:52:05.978Z"}
+{"level":"info","module":"scheduler","message":"Disparando automação 1 | [object Object]","timestamp":"2026-02-02T10:53:06.006Z"}
+{"level":"info","module":"shopee-login-step","message":"RunStep START","timestamp":"2026-02-02T10:53:06.417Z"}
+{"level":"info","module":"click-by-text","message":"Botão clicado: \"Faça login\"","timestamp":"2026-02-02T10:53:13.989Z"}
+{"level":"info","module":"totp-email","message":"Solicitando envio de OTP por e-mail","timestamp":"2026-02-02T10:53:17.003Z"}
+{"level":"info","module":"gmail-reader","message":"Buscando e-mails via Gmail API...","timestamp":"2026-02-02T10:53:20.019Z"}
+{"level":"info","module":"gmail-reader","message":"Nenhum e-mail encontrado para query: is:unread from:\"Shopee via Suporte - O2\"","timestamp":"2026-02-02T10:53:20.701Z"}
+{"level":"info","module":"totp-email","message":"Tentativa OTP 1: não chegou","timestamp":"2026-02-02T10:53:20.701Z"}
+{"level":"info","module":"gmail-reader","message":"Buscando e-mails via Gmail API...","timestamp":"2026-02-02T10:53:25.710Z"}
+{"level":"info","module":"gmail-reader","message":"Analisando email de: \"'Shopee' via Suporte - O2\" <suporteo2@nerus.com.br>","timestamp":"2026-02-02T10:53:26.478Z"}
+{"level":"info","module":"gmail-reader","message":"OTP encontrado: 483508","timestamp":"2026-02-02T10:53:26.479Z"}
+{"level":"info","module":"totp-email","message":"Tentativa OTP 2: 483508","timestamp":"2026-02-02T10:53:26.870Z"}
+{"level":"info","module":"totp-email","message":"OTP preenchido com sucesso","timestamp":"2026-02-02T10:53:27.540Z"}
+{"level":"info","module":"totp-service","message":"TOTP resolvido com sucesso","timestamp":"2026-02-02T10:53:27.541Z"}
+{"level":"info","module":"click-by-text","message":"Botão clicado: \"Verificar\"","timestamp":"2026-02-02T10:53:27.545Z"}
+{"level":"info","module":"shopee-login-step","message":"RunStep SUCCESS","timestamp":"2026-02-02T10:53:35.555Z"}
+{"level":"info","module":"shopee-navigate-step","message":"RunStep START","timestamp":"2026-02-02T10:53:35.570Z"}
+{"level":"info","module":"scheduler","message":"Scheduler iniciado","timestamp":"2026-02-02T13:59:00.477Z"}
+{"level":"info","module":"bootstrap","message":"✅ MySQL conectado com sucesso","timestamp":"2026-02-02T13:59:00.496Z"}
+{"level":"info","module":"bootstrap","message":"Ambiente: development","timestamp":"2026-02-02T13:59:00.497Z"}
+{"level":"info","module":"bootstrap","message":"Porta: 3000","timestamp":"2026-02-02T13:59:00.497Z"}
+{"level":"info","module":"scheduler","message":"Disparando automação 1 | [object Object]","timestamp":"2026-02-02T14:00:00.569Z"}
+{"level":"info","module":"shopee-login-step","message":"RunStep START","timestamp":"2026-02-02T14:00:02.531Z"}
+{"level":"info","module":"click-by-text","message":"Botão clicado: \"Faça login\"","timestamp":"2026-02-02T14:00:11.817Z"}
+{"level":"info","module":"totp-email","message":"Solicitando envio de OTP por e-mail","timestamp":"2026-02-02T14:00:14.835Z"}
+{"level":"info","module":"gmail-reader","message":"Buscando e-mails via Gmail API...","timestamp":"2026-02-02T14:00:17.857Z"}
+{"level":"info","module":"gmail-reader","message":"Nenhum e-mail encontrado para query: is:unread from:\"Shopee via Suporte - O2\"","timestamp":"2026-02-02T14:00:19.122Z"}
+{"level":"info","module":"totp-email","message":"Tentativa OTP 1: não chegou","timestamp":"2026-02-02T14:00:19.122Z"}
+{"level":"info","module":"gmail-reader","message":"Buscando e-mails via Gmail API...","timestamp":"2026-02-02T14:00:24.125Z"}
+{"level":"info","module":"gmail-reader","message":"Nenhum e-mail encontrado para query: is:unread from:\"Shopee via Suporte - O2\"","timestamp":"2026-02-02T14:00:24.680Z"}
+{"level":"info","module":"totp-email","message":"Tentativa OTP 2: não chegou","timestamp":"2026-02-02T14:00:24.680Z"}
+{"level":"info","module":"gmail-reader","message":"Buscando e-mails via Gmail API...","timestamp":"2026-02-02T14:00:29.692Z"}
+{"level":"info","module":"gmail-reader","message":"Nenhum e-mail encontrado para query: is:unread from:\"Shopee via Suporte - O2\"","timestamp":"2026-02-02T14:00:30.215Z"}
+{"level":"info","module":"totp-email","message":"Tentativa OTP 3: não chegou","timestamp":"2026-02-02T14:00:30.215Z"}
+{"level":"info","module":"gmail-reader","message":"Buscando e-mails via Gmail API...","timestamp":"2026-02-02T14:00:35.229Z"}
+{"level":"info","module":"gmail-reader","message":"Analisando email de: \"'Shopee' via Suporte - O2\" <suporteo2@nerus.com.br>","timestamp":"2026-02-02T14:00:35.985Z"}
+{"level":"info","module":"gmail-reader","message":"OTP encontrado: 263677","timestamp":"2026-02-02T14:00:35.985Z"}
+{"level":"info","module":"totp-email","message":"Tentativa OTP 4: 263677","timestamp":"2026-02-02T14:00:36.346Z"}
+{"level":"info","module":"totp-email","message":"OTP preenchido com sucesso","timestamp":"2026-02-02T14:00:37.012Z"}
+{"level":"info","module":"totp-service","message":"TOTP resolvido com sucesso","timestamp":"2026-02-02T14:00:37.013Z"}
+{"level":"info","module":"click-by-text","message":"Botão clicado: \"Verificar\"","timestamp":"2026-02-02T14:00:37.029Z"}
+{"level":"info","module":"shopee-login-step","message":"RunStep SUCCESS","timestamp":"2026-02-02T14:00:45.030Z"}
+{"level":"info","module":"shopee-navigate-step","message":"RunStep START","timestamp":"2026-02-02T14:00:45.049Z"}
+{"level":"info","module":"scheduler","message":"Scheduler iniciado","timestamp":"2026-02-02T14:31:40.007Z"}
+{"level":"info","module":"bootstrap","message":"✅ MySQL conectado com sucesso","timestamp":"2026-02-02T14:31:40.018Z"}
+{"level":"info","module":"bootstrap","message":"Ambiente: development","timestamp":"2026-02-02T14:31:40.020Z"}
+{"level":"info","module":"bootstrap","message":"Porta: 3000","timestamp":"2026-02-02T14:31:40.020Z"}
+{"level":"info","module":"scheduler","message":"Disparando automação 1 | [object Object]","timestamp":"2026-02-02T14:32:40.048Z"}
+{"level":"info","module":"shopee-login-step","message":"RunStep START","timestamp":"2026-02-02T14:32:41.815Z"}
+{"level":"info","module":"click-by-text","message":"Botão clicado: \"Faça login\"","timestamp":"2026-02-02T14:32:51.113Z"}
+{"level":"info","module":"totp-email","message":"Solicitando envio de OTP por e-mail","timestamp":"2026-02-02T14:32:54.135Z"}
+{"level":"info","module":"gmail-reader","message":"Buscando e-mails via Gmail API...","timestamp":"2026-02-02T14:32:57.151Z"}
+{"level":"info","module":"gmail-reader","message":"Nenhum e-mail encontrado para query: is:unread from:\"Shopee via Suporte - O2\"","timestamp":"2026-02-02T14:32:58.493Z"}
+{"level":"info","module":"totp-email","message":"Tentativa OTP 1: não chegou","timestamp":"2026-02-02T14:32:58.493Z"}
+{"level":"info","module":"gmail-reader","message":"Buscando e-mails via Gmail API...","timestamp":"2026-02-02T14:33:03.496Z"}
+{"level":"info","module":"gmail-reader","message":"Nenhum e-mail encontrado para query: is:unread from:\"Shopee via Suporte - O2\"","timestamp":"2026-02-02T14:33:04.008Z"}
+{"level":"info","module":"totp-email","message":"Tentativa OTP 2: não chegou","timestamp":"2026-02-02T14:33:04.008Z"}
+{"level":"info","module":"gmail-reader","message":"Buscando e-mails via Gmail API...","timestamp":"2026-02-02T14:33:09.012Z"}
+{"level":"info","module":"gmail-reader","message":"Analisando email de: \"'Shopee' via Suporte - O2\" <suporteo2@nerus.com.br>","timestamp":"2026-02-02T14:33:09.771Z"}
+{"level":"info","module":"gmail-reader","message":"OTP encontrado: 848539","timestamp":"2026-02-02T14:33:09.772Z"}
+{"level":"info","module":"totp-email","message":"Tentativa OTP 3: 848539","timestamp":"2026-02-02T14:33:10.065Z"}
+{"level":"info","module":"totp-email","message":"OTP preenchido com sucesso","timestamp":"2026-02-02T14:33:10.721Z"}
+{"level":"info","module":"totp-service","message":"TOTP resolvido com sucesso","timestamp":"2026-02-02T14:33:10.722Z"}
+{"level":"info","module":"click-by-text","message":"Botão clicado: \"Verificar\"","timestamp":"2026-02-02T14:33:10.741Z"}
+{"level":"info","module":"shopee-login-step","message":"RunStep SUCCESS","timestamp":"2026-02-02T14:33:18.747Z"}
+{"level":"info","module":"shopee-navigate-step","message":"RunStep START","timestamp":"2026-02-02T14:33:18.764Z"}
+{"level":"info","module":"scheduler","message":"Scheduler iniciado","timestamp":"2026-02-02T16:53:40.709Z"}
+{"level":"info","module":"bootstrap","message":"✅ MySQL conectado com sucesso","timestamp":"2026-02-02T16:53:40.726Z"}
+{"level":"info","module":"bootstrap","message":"Ambiente: development","timestamp":"2026-02-02T16:53:40.727Z"}
+{"level":"info","module":"bootstrap","message":"Porta: 3000","timestamp":"2026-02-02T16:53:40.728Z"}
+{"level":"info","module":"scheduler","message":"Disparando automação 1 | [object Object]","timestamp":"2026-02-02T16:54:40.750Z"}
+{"level":"info","module":"shopee-login-step","message":"RunStep START","timestamp":"2026-02-02T16:54:42.664Z"}
+{"level":"info","module":"click-by-text","message":"Botão clicado: \"Faça login\"","timestamp":"2026-02-02T16:54:51.797Z"}
+{"level":"info","module":"totp-email","message":"Solicitando envio de OTP por e-mail","timestamp":"2026-02-02T16:54:54.820Z"}
+{"level":"info","module":"gmail-reader","message":"Buscando e-mails via Gmail API...","timestamp":"2026-02-02T16:54:57.851Z"}
+{"level":"info","module":"gmail-reader","message":"Nenhum e-mail encontrado para query: is:unread from:\"Shopee via Suporte - O2\"","timestamp":"2026-02-02T16:54:59.098Z"}
+{"level":"info","module":"totp-email","message":"Tentativa OTP 1: não chegou","timestamp":"2026-02-02T16:54:59.099Z"}
+{"level":"info","module":"gmail-reader","message":"Buscando e-mails via Gmail API...","timestamp":"2026-02-02T16:55:04.105Z"}
+{"level":"info","module":"gmail-reader","message":"Nenhum e-mail encontrado para query: is:unread from:\"Shopee via Suporte - O2\"","timestamp":"2026-02-02T16:55:04.645Z"}
+{"level":"info","module":"totp-email","message":"Tentativa OTP 2: não chegou","timestamp":"2026-02-02T16:55:04.645Z"}
+{"level":"info","module":"gmail-reader","message":"Buscando e-mails via Gmail API...","timestamp":"2026-02-02T16:55:09.660Z"}
+{"level":"info","module":"gmail-reader","message":"Analisando email de: \"'Shopee' via Suporte - O2\" <suporteo2@nerus.com.br>","timestamp":"2026-02-02T16:55:10.436Z"}
+{"level":"info","module":"gmail-reader","message":"OTP encontrado: 652925","timestamp":"2026-02-02T16:55:10.436Z"}
+{"level":"info","module":"totp-email","message":"Tentativa OTP 3: 652925","timestamp":"2026-02-02T16:55:10.716Z"}
+{"level":"info","module":"totp-email","message":"OTP preenchido com sucesso","timestamp":"2026-02-02T16:55:11.389Z"}
+{"level":"info","module":"totp-service","message":"TOTP resolvido com sucesso","timestamp":"2026-02-02T16:55:11.390Z"}
+{"level":"info","module":"click-by-text","message":"Botão clicado: \"Verificar\"","timestamp":"2026-02-02T16:55:11.417Z"}
+{"level":"info","module":"shopee-login-step","message":"RunStep SUCCESS","timestamp":"2026-02-02T16:55:19.420Z"}
+{"level":"info","module":"shopee-navigate-step","message":"RunStep START","timestamp":"2026-02-02T16:55:19.440Z"}
+{"level":"info","module":"scheduler","message":"Scheduler iniciado","timestamp":"2026-02-02T20:23:47.775Z"}
+{"level":"info","module":"bootstrap","message":"✅ MySQL conectado com sucesso","timestamp":"2026-02-02T20:23:47.782Z"}
+{"level":"info","module":"bootstrap","message":"Ambiente: development","timestamp":"2026-02-02T20:23:47.782Z"}
+{"level":"info","module":"bootstrap","message":"Porta: 3000","timestamp":"2026-02-02T20:23:47.783Z"}
+{"level":"info","module":"scheduler","message":"Disparando automação 1 | [object Object]","timestamp":"2026-02-02T20:24:47.847Z"}
+{"level":"info","module":"shopee-login-step","message":"RunStep START","timestamp":"2026-02-02T20:24:50.587Z"}
+{"level":"info","module":"click-by-text","message":"Botão clicado: \"Sign in\"","timestamp":"2026-02-02T20:25:06.981Z"}
+{"level":"info","module":"totp-email","message":"Solicitando envio de OTP por e-mail","timestamp":"2026-02-02T20:25:10.004Z"}
+{"level":"info","module":"gmail-reader","message":"Buscando e-mails via Gmail API...","timestamp":"2026-02-02T20:25:13.027Z"}
+{"level":"info","module":"gmail-reader","message":"Nenhum e-mail encontrado para query: is:unread from:\"Shopee via Suporte - O2\"","timestamp":"2026-02-02T20:25:14.119Z"}
+{"level":"info","module":"totp-email","message":"Tentativa OTP 1: não chegou","timestamp":"2026-02-02T20:25:14.120Z"}
+{"level":"info","module":"gmail-reader","message":"Buscando e-mails via Gmail API...","timestamp":"2026-02-02T20:25:19.129Z"}
+{"level":"info","module":"gmail-reader","message":"Analisando email de: \"'Shopee' via Suporte - O2\" <suporteo2@nerus.com.br>","timestamp":"2026-02-02T20:25:19.949Z"}
+{"level":"info","module":"gmail-reader","message":"OTP encontrado: 057173","timestamp":"2026-02-02T20:25:19.950Z"}
+{"level":"info","module":"totp-email","message":"Tentativa OTP 2: 057173","timestamp":"2026-02-02T20:25:20.280Z"}
+{"level":"info","module":"totp-email","message":"OTP preenchido com sucesso","timestamp":"2026-02-02T20:25:20.970Z"}
+{"level":"info","module":"totp-service","message":"TOTP resolvido com sucesso","timestamp":"2026-02-02T20:25:20.971Z"}
+{"level":"info","module":"click-by-text","message":"Botão clicado: \"Verify\"","timestamp":"2026-02-02T20:25:30.997Z"}
+{"level":"info","module":"shopee-login-step","message":"RunStep SUCCESS","timestamp":"2026-02-02T20:25:38.998Z"}
+{"level":"info","module":"shopee-navigate-step","message":"RunStep START","timestamp":"2026-02-02T20:25:39.018Z"}

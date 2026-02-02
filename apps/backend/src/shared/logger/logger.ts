@@ -1,43 +1,54 @@
-import fs from "fs";
-import path from "path";
+import fs from "fs"
+import path from "path"
 
-type LogLevel = "info" | "warn" | "error" | "debug";
+type LogLevel = "info" | "warn" | "error" | "debug"
 
 interface LogEntry {
-  level: LogLevel;
-  module: string;
-  message: string;
-  data?: any;
-  timestamp: string;
+  level: LogLevel
+  module: string
+  message: string
+  data?: any
+  timestamp: string
 }
 
-const LOG_DIR = path.resolve(process.cwd(), "logs");
+const LOG_DIR = path.resolve(process.cwd(), "logs")
 
 if (!fs.existsSync(LOG_DIR)) {
-  fs.mkdirSync(LOG_DIR, { recursive: true });
+  fs.mkdirSync(LOG_DIR, { recursive: true })
 }
 
 function writeToFile(entry: LogEntry) {
-  const file = path.join(LOG_DIR, `${entry.level}.log`);
-  fs.appendFileSync(file, JSON.stringify(entry) + "\n");
+  const file = path.join(LOG_DIR, `${entry.level}.log`)
+  fs.appendFileSync(file, JSON.stringify(entry) + "\n")
+}
+
+function normalizeData(data: any) {
+  if (data instanceof Error) {
+    return {
+      name: data.name,
+      message: data.message,
+      stack: data.stack,
+    }
+  }
+  return data
 }
 
 function formatConsole(entry: LogEntry) {
-  const base = `[${entry.timestamp}] [${entry.level.toUpperCase()}] [${entry.module}]`;
+  const base = `[${entry.timestamp}] [${entry.level.toUpperCase()}] [${entry.module}]`
 
   switch (entry.level) {
     case "info":
-      console.log(base, entry.message, entry.data ?? "");
-      break;
+      console.log(base, entry.message, entry.data ?? "")
+      break
     case "warn":
-      console.warn(base, entry.message, entry.data ?? "");
-      break;
+      console.warn(base, entry.message, entry.data ?? "")
+      break
     case "error":
-      console.error(base, entry.message, entry.data ?? "");
-      break;
+      console.error(base, entry.message, entry.data ?? "")
+      break
     case "debug":
-      console.debug(base, entry.message, entry.data ?? "");
-      break;
+      console.debug(base, entry.message, entry.data ?? "")
+      break
   }
 }
 
@@ -47,12 +58,12 @@ export function createLogger(module: string) {
       level,
       module,
       message,
-      data,
+      data: normalizeData(data),
       timestamp: new Date().toISOString(),
-    };
+    }
 
-    formatConsole(entry);
-    writeToFile(entry);
+    formatConsole(entry)
+    writeToFile(entry)
   }
 
   return {
@@ -60,5 +71,5 @@ export function createLogger(module: string) {
     warn: (msg: string, data?: any) => log("warn", msg, data),
     error: (msg: string, data?: any) => log("error", msg, data),
     debug: (msg: string, data?: any) => log("debug", msg, data),
-  };
+  }
 }

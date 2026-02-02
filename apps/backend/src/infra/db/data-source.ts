@@ -11,6 +11,7 @@ import { ClientPlatformConfig } from "./entities/ClientPlatformConfig.entity";
 
 import { Run } from "./entities/Run.entity";
 import { RunStep } from "./entities/RunStep.entity";
+import { AutomationSchedule } from "./entities/AutomationSchedules ";
 
 export const AppDataSource = new DataSource({
     type: "mysql",
@@ -33,6 +34,7 @@ export const AppDataSource = new DataSource({
         DeliveryChannel,
         ClientReportDelivery,
         ClientPlatformConfig,
+        AutomationSchedule,
         Run,
         RunStep,
     ],

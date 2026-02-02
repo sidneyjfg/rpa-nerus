@@ -17,35 +17,26 @@ export async function clickButtonByText(
   const start = Date.now()
 
   while (Date.now() - start < timeout) {
-    const clicked = await page.evaluate((t) => {
-      const norm = (s: string) =>
-        (s || '').replace(/\s+/g, ' ').trim()
+    const buttons = await page.$$('button')
 
-      const buttons = Array.from(document.querySelectorAll('button'))
+    for (const b of buttons) {
+      const value = await page.evaluate(el => el.textContent, b)
+      const norm = (value || '').replace(/\s+/g, ' ').trim()
 
-      for (const b of buttons) {
-        if (
-          norm(b.textContent) === t &&
-          b.offsetParent !== null &&
-          !b.disabled
-        ) {
-          b.click()
-          return true
-        }
+      if (norm === text) {
+        await b.click()
+        log.info(`Botão clicado: "${text}"`)
+        return true
       }
-      return false
-    }, text)
-
-    if (clicked) {
-      log.info(`Botão clicado: "${text}"`)
-      return true
     }
 
     await new Promise(r => setTimeout(r, pollInterval))
   }
 
+  log.error(`Botão não encontrado: "${text}"`)
   return false
 }
+
 
 export async function clickButtonByAnyText(
   page: Page,

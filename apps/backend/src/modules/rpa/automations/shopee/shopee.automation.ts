@@ -90,7 +90,7 @@ export async function runShopeeAutomation(
     }
 
     const deliveryService = new DeliveryService()
-    const browser = await puppeteer.launch({ headless: true })
+    const browser = await puppeteer.launch({ headless: false }) //true -> sem interface
     const page = await browser.newPage()
 
     try {
